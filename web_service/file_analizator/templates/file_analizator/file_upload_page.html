@@ -1,0 +1,7 @@
+{% block content %}
+    <h2>The service can analyze text files other than formats like pdf, doc, etc.</h2>
+    <form method="POST" enctype="multipart/form-data" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
